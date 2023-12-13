@@ -7,21 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="/style/index.css">
-    <title>Noizu - Tienda de instrumentos Musicales</title>
+    <link rel="stylesheet" href="/style/contacto.css">
+    <title>Noizu - Contacto</title>
 </head>
 
 <body>
 
-
-
-    <!-- navbar -->
-
-
-
     <header class="header">
         <div class="logo">
-            <img src="img/logo.jpg" alt="logo de la pagina">
+            <a href="/index.html" class="inicio"><button>Inicio</button></a>
         </div>
         <nav class="navbar">
             <ul class="nav-links">
@@ -30,7 +24,7 @@
                 <li><a href="/page/nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
-        <a href="/page/contacto.html" class="btn"><button>Contacto</button></a>
+        <a href="#" class="btn"><button>Contacto</button></a>
 
         <a onclick="OpenNav()" href="#" class="menu"><button>Menu</button></a>
 
@@ -40,46 +34,60 @@
                 <a href="/page/productos.html">Productos</a>
                 <a href="/page/servicios.html">Servicios</a>
                 <a href="/page/nosotros.html">Nosotros</a>
-                <a href="/page/contacto.html">Contacto</a>
             </div>
         </div>
     </header>
 
 
-
-    <!-- carousel bootstrap -->
-
-
-
-    <div class="carousel-contenedor">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/carousel-1.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carousel-2.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carousel-3.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carousel-4.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
     <!-- contenido -->
 
 
-
     <div>
-        
+        <div class="contenedor-titulo">
+            <h1 class="titulo">Contacto</h1>
+        </div>
     </div>
 
+    <div class="contenedor-formilario">
+        <form class="form" id="form">
+            <div class="form-secciones">
+                <div class="field">
+                    <label for="from_name">Nombre y Apellido</label>
+                    <input type="text" name="from_name" id="from_name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="field">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" name="asunto" id="asunto" required>
+                </div>
+                <div class="field">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" name="ciudad" id="ciudad" required>
+                </div>
+                <div class="field">
+                    <label for="numerodetelefono">Número de Teléfono</label>
+                    <input type="number" name="numerodetelefono" id="numerodetelefono" required min="0">
+                </div>
+            </div>
+            <div class="form-secciones">
+                <div class="field">
+                    <label for="message">Déjanos tu mensaje</label>
+                    <textarea name="message" id="message" required></textarea>
+                </div>
+                <div class="div-enviar">
+                    <input type="submit" id="button" value="Enviar">
+                </div>
+            </div>
+
+
+
+            
+        </form>
+
+    </div>
 
 
     <footer>
@@ -95,7 +103,7 @@
             <div class="info-footer m-3">
                 <ul>
                     <h3>Contactos</h3>
-                    <li>Correo: <a class="textfooter" href="/page/contacto.html">noizu.musica@gmail.com</a></li>
+                    <li>Correo: <a class="textfooter" href="#">noizu.musica@gmail.com</a></li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -114,7 +122,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
+    <script src="/js/contacto.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('v2jYF43TAS7EGzUiW')
+    </script>
+
 </body>
 
 </html>
