@@ -68,8 +68,7 @@ body {
 
 .header .btn button,
 .header .menu button,
-.header .inicio button,
-.contenedor-info .btn button {
+.header .inicio button {
     font-weight: 700;
     color: #000000ff;
     padding: 9px 25px;
@@ -83,8 +82,7 @@ body {
 
 .header .btn button:hover,
 .header .menu button:hover,
-.header .inicio button:hover,
-.contenedor-info .btn button:hover {
+.header .inicio button:hover {
     background-color: #ffffff;
     color: #8100de;
     transform: scale(1.1);
@@ -94,15 +92,14 @@ body {
 
 .header .btn button:active,
 .header .menu button:active,
-.header .inicio button:active,
-.contenedor-info .btn button:active {
+.header .inicio button:active {
     transform: none;
 }
 
 @media screen and (max-width: 850px) {
 
     .nav-links,
-    .header .btn button {
+    .btn {
         display: none;
     }
 
@@ -176,165 +173,167 @@ body {
 
 
 
-/* contenido de servicios */
+/* contenido producto */
 
 
 
-.contenedor-titulo {
+.div-producto {
     display: flex;
     justify-content: center;
+    width: 100%;
+    margin: 30px 0 30px 0;
 }
 
-.titulo {
-    text-align: center;
-    font-weight: 700;
-    margin: 30px;
-    padding: 10px;
-    color: white;
-    background: linear-gradient(90deg, rgba(254, 57, 137, 1) 0%, rgba(169, 68, 242, 1) 100%);
-    width: 400px;
-    border-radius: 50px;
-    box-shadow: #00000056 0px 7px 7px;
-}
-
-.div-servicios {
-    display: flex;
-    justify-content: center;
-}
-
-.contenedor-servicios {
-    width: 80%;
-
-}
-
-@media screen and (max-width: 1280px) {
-    .contenedor-servicios {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-}
-
-.card-servicio {
+.contenedor-produto {
     display: flex;
     justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+    background-color: #ffffff52;
     border-radius: 25px;
-    margin: 25px;
     box-shadow: #00000056 0px 7px 7px;
 }
 
-@media screen and (max-width: 1280px) {
-    .card-servicio {
+.contenedor-produto-img {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.contenedor-produto img {
+    width: 300px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width:749px) {
+
+    .contenedor-produto-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor-produto {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border-radius: 25px;
-        margin: 25px;
-        box-shadow: #00000056 0px 7px 7px;
-        width: 400px;
     }
 }
 
-.servicios-img-1 img,
-.servicios-img-2-up img,
-.servicios-img-2 img,
-.servicios-img-3 img {
-    width: 400px;
-    height: 100%;
-}
-
-.servicios-img-1 img,
-.servicios-img-3 img {
-    border-radius: 25px 0px 0px 25px;
-}
-
-.servicios-img-2 img,
-.servicios-img-2-up img {
-    border-radius: 0px 25px 25px 0px;
-}
-
-@media screen and (max-width: 1280px) {
-
-    .servicios-img-1 img,
-    .servicios-img-2 img,
-    .servicios-img-2-up img,
-    .servicios-img-3 img {
-        border-radius: 25px 25px 0px 0px;
-    }
-
-    .servicios-img-2-up,
-    .servicios-img-2-up img{
-        display: none;
-    }
-    .servicios-img-2,
-    .servicios-img-2 img{
-        display: inherit;
-    }
-    .contenedor-txt{
-        width: 400px;
-    }
-}
-
-@media screen and (min-width: 1281px){
-    .servicios-img-2-up,
-    .servicios-img-2-up img{
-        display: inherit;
-    }
-    .servicios-img-2,
-    .servicios-img-2 img{
-        display: none;
-    }
-}
-
-
-
-.text-titulo-1,
-.text-titulo-2,
-.text-titulo-3 {
-    color: white;
+.text-titulo{
     background: linear-gradient(90deg, rgba(254, 57, 137, 1) 0%, rgba(169, 68, 242, 1) 100%);
-    padding: 1px;
-    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 25px;
+}
+.precio{
+    color: #8100de;
+    font-weight: 700;
+    font-size: 30px;
+    text-shadow: #00000056 0px 4px 4px;
 }
 
-.text-titulo-1 h4,
-.text-titulo-2 h4,
-.text-titulo-3 h4 {
-    margin-top: 5px;
-}
 
-.text-titulo-1,
-.text-titulo-3 {
-    border-radius: 0px 25px 0px 0px;
-}
 
-.text-titulo-2 {
-    border-radius: 25px 0px 0px 0px;
-}
+/* formulario de compra */
 
-@media screen and (max-width: 1280px) {
-    .text-titulo-1,
-    .text-titulo-2,
-    .text-titulo-3 {
-        border-radius: 0;
-    }
-}
 
-p {
-    margin: 20px 30px 20px 30px;
-}
 
-.div-info{
+.contenedor-formilario {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    width: 100%;
 }
-.contenedor-info{
+
+.form{
+    padding: 5px;
     display: flex;
-    flex-direction: column;
-    width: 80%;
-    text-align: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #fe398880 0%, #a944f280 100%);
+    box-shadow: #00000056 0px 7px 7px;
+    margin: 5px 0px 5.3vh 0px;
 }
+
+.form-secciones{
+    padding: 15px;
+}
+
+@media screen and (max-width:749px) {
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .form-secciones{
+        padding: 5px;
+    }
+    
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.field label {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1d1d1d;
+    padding: 3px;
+}
+
+.field input{
+    display: block;
+    min-width: 325px;
+    line-height: 1.5;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+textarea{
+    width: 350px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.div-enviar{
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #000000ff;
+    padding: 9px 25px;
+    background: #ffffffb0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: #00000056 0px 7px 7px;
+    margin: 5px;  
+}
+
+input[type="submit"]:hover{
+    background-color: #ffffff;
+    color: #8100de;
+    transform: scale(1.1);
+    transition: all 0.3s;
+    box-shadow: #00000056 0px 7px 7px,
+}
+
+input[type="submit"]:active{
+    transform: none;
+}
+
+
 
 
 

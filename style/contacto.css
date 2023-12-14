@@ -173,7 +173,7 @@ body {
 
 
 
-/* contenedor de contacto */
+/* contenido de contacto */
 
 
 
@@ -194,6 +194,12 @@ body {
     box-shadow: #00000056 0px 7px 7px;
 }
 
+
+
+/* formulario de contacto */
+
+
+
 .contenedor-formilario {
     display: flex;
     justify-content: center;
@@ -207,7 +213,7 @@ body {
     border-radius: 25px;
     background: linear-gradient(90deg, #fe398880 0%, #a944f280 100%);
     box-shadow: #00000056 0px 7px 7px;
-    margin: 5px 0px 25px 0px;
+    margin: 5px 0px 5.3vh 0px;
 }
 
 .form-secciones{

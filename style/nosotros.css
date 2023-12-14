@@ -173,7 +173,7 @@ body {
 
 
 
-/* contenedor de nosotros */
+/* contenido de nosotros */
 
 
 
@@ -224,15 +224,12 @@ body {
     box-shadow: #00000056 0px 7px 7px;
 }
 
-
-
 .contenedor-text {
     display: flex;
     justify-content: space-between;
     margin: 10px 0px 10px 0px;
     display: flex;
     justify-content: center;
-
 }
 
 @media screen and (max-width: 749px) {
