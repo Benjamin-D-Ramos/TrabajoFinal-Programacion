@@ -210,6 +210,11 @@ body {
     .contenedor-produto-img {
         display: flex;
         justify-content: center;
+        width: 100%;
+    }
+
+    .contenedor-produto-img img {
+        width: 100%;
     }
 
     .contenedor-produto {

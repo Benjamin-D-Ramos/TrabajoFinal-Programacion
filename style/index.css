@@ -219,7 +219,7 @@ body{
     text-align: center;
     color: #ffffff;
     padding: 5px;
-    width: 400px;
+    width: 350px;
     background: linear-gradient(135deg, rgba(254,57,137,1) 0%, rgba(169,68,242,1) 100%);
     box-shadow: #00000056 0px 7px 7px;
     border-radius: 50px;
@@ -229,7 +229,7 @@ body{
 }
 
 .contenedor-img-info {
-    width: 400px;
+    width: 350px;
 }
 
 .contenedor-img-info img {

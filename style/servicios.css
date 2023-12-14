@@ -239,7 +239,7 @@ body {
 .servicios-img-2-up img,
 .servicios-img-2 img,
 .servicios-img-3 img {
-    width: 400px;
+    width: 100%;
     height: 100%;
 }
 
@@ -271,7 +271,7 @@ body {
         display: inherit;
     }
     .contenedor-txt{
-        width: 400px;
+        width: 100%;
     }
 }
 
